@@ -14,8 +14,9 @@ const isGoogleMaps = ref(false);
     <span>Google Maps PLatform</span>
   </div>
 
-  <GoogleMapPolygon v-if="isGoogleMaps" />
+  <GoogleMapPolygon v-if="!isGoogleMaps" />
   <Maplibre v-if="!isGoogleMaps" />
+  <Polyline />
 </template>
 
 <style>
